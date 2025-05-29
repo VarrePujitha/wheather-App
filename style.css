@@ -24,7 +24,6 @@
 .air-header {
     display: flex;
     align-items: center;
-    margin-top: 40px;
     gap: 500px; /* Better than gap: 500px for responsiveness */
 }
 .air-details {
