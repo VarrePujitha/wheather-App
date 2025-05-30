@@ -38,7 +38,7 @@ function getforecastdetails(data)
                 time=time-12;
             }
             acc+=`
-                <div>
+                <div style="padding: 30px 10px;">
                     <h6 >${time}:00 ${ind<12?"AM": "PM"}</h6>
                     <img src=${obj.condition.icon}>
                     <h3>${obj.temp_c}</h3>
@@ -83,6 +83,7 @@ function displayair(data){
     let airidele = document.getElementById("Airconditions");
     let returnval="";
     returnval+=`
+            <div style="padding: 20px 30px;">
                 <div class="air-header">
                     <h5>Air Conditions</h5>
                     <button class="see-more-btn">See More</button>
@@ -101,6 +102,7 @@ function displayair(data){
                         <p>${data.forecast.forecastday[0].day.daily_chance_of_rain}</p>
                     </div>
                 </div>
+            </div>
         `;
     airidele.innerHTML=returnval;
 }
